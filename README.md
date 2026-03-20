@@ -38,7 +38,7 @@ Create a `fields.json`:
 Upload and convert:
 
 ```bash
-curl -X POST http://localhost:5525/convert \
+curl -X POST http://localhost/convert \
   -F "file=@/path/to/tpl.docx;type=application/vnd.openxmlformats-officedocument.wordprocessingml.document" \
   -F "fields=@fields.json;type=application/json" \
   -o output.pdf
@@ -47,7 +47,7 @@ curl -X POST http://localhost:5525/convert \
 ## Example: PowerShell
 
 ```powershell
-curl -X POST http://localhost:5525/convert `
+curl -X POST http://localhost/convert `
   -F "file=@C:\path\to\tpl.docx;type=application/vnd.openxmlformats-officedocument.wordprocessingml.document" `
   -F "fields=@C:\path\to\fields.json;type=application/json" `
   -o output.pdf
