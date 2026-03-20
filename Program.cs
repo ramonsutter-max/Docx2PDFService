@@ -15,7 +15,7 @@ builder.Services.AddSingleton<IDocxProcessingService, DocxProcessingService>();
 builder.Services.AddSingleton<IPdfConversionService,  LibreOfficePdfConversionService>();
 
 // ── Kestrel port ──────────────────────────────────────────────────────
-builder.WebHost.UseUrls("http://0.0.0.0:5525");
+builder.WebHost.UseUrls("http://0.0.0.0:80");
 
 // ── Pipeline ──────────────────────────────────────────────────────────
 var app = builder.Build();
@@ -24,6 +24,6 @@ app.UseAuthorization();
 app.MapControllers();
 app.MapGet("/health", () => Results.Ok(new { status = "healthy", timestamp = DateTime.UtcNow }));
 
-app.Logger.LogInformation("Docx2PDFService listening on http://0.0.0.0:5525");
+app.Logger.LogInformation("Docx2PDFService listening on http://0.0.0.0:80");
 
 app.Run();
