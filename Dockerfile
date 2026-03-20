@@ -27,6 +27,6 @@ ENV LibreOffice__ExecutablePath=libreoffice
 
 COPY --from=build /app/publish .
 
-EXPOSE 5525
+EXPOSE 80
 
 ENTRYPOINT ["dotnet", "Docx2PDFService.dll"]

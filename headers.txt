@@ -1,0 +1,16 @@
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 25511
+Content-Disposition: attachment; filename=tpl_1_1795c2267fe0ed7448e1b2679373e93e.pdf; filename*=UTF-8''tpl_1_1795c2267fe0ed7448e1b2679373e93e.pdf
+Content-Type: application/pdf
+Server: railway-edge
+X-Railway-Edge: railway/europe-west4-drams3a
+X-Railway-Request-Id: flN0-UBfS6W0F4um0-QtfA
+Accept-Ranges: bytes
+Date: Sat, 21 Feb 2026 10:39:57 GMT
+Via: 1.1 varnish
+X-Served-By: cache-lcy-egml8630029-LCY
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1771670394.136612,VS0,VE3525
+
