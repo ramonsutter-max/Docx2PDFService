@@ -66,7 +66,7 @@ Build and run with Docker:
 
 ```bash
 docker build -t docx2pdf .
-docker run -d --restart unless-stopped -p 5525:5525 --name docx2pdf docx2pdf
+docker run -d --restart unless-stopped -p 80:80 --name docx2pdf docx2pdf
 ```
 
 Or with docker-compose (provided `docker-compose.yml`):
